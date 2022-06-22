@@ -6,8 +6,8 @@
 #EXT-X-PLAYLIST-TYPE:VOD
 
 #EXTINF:3.033333,
-./seg-1-v1-a1.ts
+/master/seg-1-v1-a1.ts
 #EXTINF:3.033333,
-./seg-2-v1-a1.ts
+/master/seg-2-v1-a1.ts
 
 #EXT-X-ENDLIST
