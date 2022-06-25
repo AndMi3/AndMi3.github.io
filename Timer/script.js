@@ -1,14 +1,14 @@
-let interval = setInterval(reload, 1);
+let interval = setInterval(reload, 1000);
 
-let date = {}
+let date = {
+  'fdtto': `document.querySelector('span#fdtto').innerText`
+}
 
 function reload(){
   date.D = document.querySelectorAll('span.time')[0].innerText;      
   date.M = document.querySelectorAll('span.time')[1].innerText;
   date.Y = document.querySelectorAll('span.time')[2].innerText;
-  if(date.Y > date.Y){
-    console.log(date.Y);
-  }
+  console.log(date.fdtto);
 }
 
 /*
