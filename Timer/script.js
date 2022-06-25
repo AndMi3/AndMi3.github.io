@@ -11,6 +11,6 @@ console.log(date.D);
 
 date.D = Number(date.D);
 
-date.D -= 10;
+date.D = date.D - 10;
 
 document.body.append(date.D);
