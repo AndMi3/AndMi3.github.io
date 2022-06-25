@@ -8,7 +8,7 @@ function reload(){
   date.Y = document.querySelectorAll('span.time')[2].innerText;
   if(date.Y != date.Y){
     console.log(date.Y);
-  {
+  }
 }
 
 /*
