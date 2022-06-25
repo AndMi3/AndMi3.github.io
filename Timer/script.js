@@ -19,8 +19,6 @@ function reload(){
 
   console.log(`реальное время: ${date.realtime}`);
 
-  first = Number(first);
-
   first = (date.realtime - date.fdtto) / 60 / 60 / 24 ;
 
   console.log(`результат: ${first}`);
