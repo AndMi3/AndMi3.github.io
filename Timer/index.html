@@ -1,31 +1,22 @@
-<!DODTYPE HTML>
+<!DOCTYPE html>
 <html>
-  <head>
-  </head>
-  <body>
-    <h3 class="display-time monospace">
-
-         <!-- полная дата -->
-    
-         <span class="time" da-tz="Europe/Moscow" data-format="D"></span>/
-
-         <!-- полная дата -->
-    
-         <span class="time" da-tz="Europe/Moscow" data-format="M"></span>/
-
-         <!-- полная дата -->
-    
-         <span class="time" da-tz="Europe/Moscow" data-format="Y"></span>
-      
-         <!-- полная дата -->
-    
-         <span class="time" da-tz="Europe/Moscow" data-format="X"></span>
-
-         <!-- полная дата -->
-    
-         <span class="time"  data-format="X"></span>
-      
-    </h3>
-        <script src="https://andmi3.github.io/time100/lib.js"></script>
-  </body>
+<head>
+  <script src="./vars.js"></script>
+  <script src="./lib.js"></script>
+  <!--script src="./funcs.js"></script-->
+  <style>
+    .time {
+      color: #3f00bf;
+    }
+  </style>
+</head>
+<body>
+  <a id="text"></a>
+  <h1>Время в Ярославле:</h1>
+  <a class="time" data-tz="Europe/Moscow" data-format="%H:%i:%s"></a><br>
+  <a class="time" data-tz="Europe/Moscow" data-format="%d %F %Y года, %l"></a><br>
+  <!--a class="time" data-tz="Europe/Moscow" data-format="A %A a %a %B %c D %D d %d E %e %F %g H %H h %h %I %j k L %L l %l M %M m %m N %N %n %O P %P Q %r S %S s %s %T %t %U %u W %W w %w X x Y %Y y %y Z %Z z %z"></a-->                                               
+  <button onclick="info()">инфо</button>
+  <script src="./funcs.js"></script>
+</body>
 </html>
