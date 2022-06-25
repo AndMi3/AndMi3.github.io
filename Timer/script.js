@@ -25,6 +25,8 @@ function reload(){
 
   first = document.querySelector('span#first').innerText;
 
+  console.log(first);
+
   first = `\n\nМы вмефти: ${res.first} д`;
 
 }
