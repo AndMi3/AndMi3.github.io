@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html ng-app>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <style>
+      body {
+        background-color: {{bgColor}};
+      }
+      .text {
+        background-color: {{bgTextColor}};
+        color: {{color}};
+        border: {{borderWidth}}px solid {{borderColor}};
+      }
+    </style>
+  <title>{{title}}</title>
+  <meta name="theme-color" content="{{themeColor}}">
+  <!--script>
+    alert('Привет');
+    function tik(){
+      let scrpt = document.querySelectorAll('input')[0];
+      
+        alert(scrpt.value);
+    }
+  </script-->
+</head>
+<body>
+  <a class="text">{{text}}</a><br>
+  <button onclick="tik()">{{btText}}</button><br><br><br>
+  <input type="text" placeholder="Текст" ng-model="text"><br>
+  <input type="text" placeholder="Цвет фона" ng-model="bgColor"><br>
+  <input type="text" placeholder="Цвет текста"ng-model="color"><br>
+  <input type="text" placeholder="Цвет фона текста" ng-model="bgTextColor"><br>
+  <input type="text" placeholder="Цвет левого обода текста" ng-model="borderColor"><br>
+  <input type="text" placeholder="Ширина обода текста" ng-model="borderWidth"><br>
+  <input type="text" placeholder="Заголовок страницы" ng-model="title"><br>
+  <input type="text" placeholder="Цвет темы" ng-model="themeColor"><br>
+  <input type="text" placeholder="Текст кнопки" ng-model="btText"><br>
+  <input type="text" value="Скрипт для кнопки" ng-model="scrForBt"><br>
+
+</body>
+</html>

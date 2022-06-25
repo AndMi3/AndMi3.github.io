@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <input style="text-transform: lowercase;"></input><br/>
+        <span></span>
+        <script>
+        
+          let inp = document.querySelector('input'),
+              spn = document.querySelector('span'),
+              stl = document.createElement('style');
+              
+          inp.onclick = function(){prs()};
+        
+          function prs(){
+            inp = document.querySelector('input');
+            setTimeout(() => {
+              if(stl){stl.remove()}
+              stl.innerHTML = `body{background-color: #${inp.value};}`;
+              document.head.append(stl)
+              prs()
+            }, 1);
+          }
+          
+        </script>
+    </body>
+</html>
