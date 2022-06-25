@@ -13,4 +13,4 @@ date.D = Number(date.D);
 
 date.D = date.D - 10;
 
-document.body.append(date.D);
+console.log(date.D);
