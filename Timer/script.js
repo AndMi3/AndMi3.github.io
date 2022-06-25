@@ -1,7 +1,7 @@
 let interval = setInterval(reload, 1000);
 
 let date = {
-  'fdtto': `document.querySelector('span#fdtto').innerText`
+  'fdtto': `${document.querySelector('span#fdtto').innerText}`
 }
 
 function reload(){
