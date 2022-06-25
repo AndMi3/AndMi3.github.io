@@ -1,0 +1,159 @@
+.books-author {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #494949;
+	text-align: left;
+	vertical-align: top;
+	border-top-style: 2;
+	padding-top: 0px;
+	padding-right: 4px;
+	padding-bottom: 0px;
+	padding-left: 4px;
+
+
+
+}
+.books-title {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #494949;
+	padding-top: 0px;
+	padding-right: 4px;
+	padding-bottom: 0px;
+	padding-left: 4px;
+
+
+}
+.books-data {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #494949;
+	padding-top: 0px;
+	padding-right: 4px;
+	padding-bottom: 0px;
+	padding-left: 4px;
+
+}
+.books-text {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #494949;
+	text-align: justify;
+	text-indent: 26pt;
+	vertical-align: top;
+	padding-left: 10px;
+	list-style-position: outside;
+	list-style-type: square;
+
+
+}
+.books-chapter {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #494949;
+	text-align: center;
+	text-indent: 0pt;
+	padding-left: 10px;
+}
+.books-right {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	color: #494949;
+	text-align: right;
+	vertical-align: top;
+}
+.books-bullet {
+	list-style-position: outside;
+	list-style-type: square;
+	text-indent: 0pt;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #494949;
+
+
+}
+.books-title-centered {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #494949;
+	padding-top: 0px;
+	padding-right: 4px;
+	padding-bottom: 0px;
+	padding-left: 4px;
+	text-align: center;
+
+}
+.books-title-centered-CAPS {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #494949;
+	padding-top: 0px;
+	padding-right: 4px;
+	padding-bottom: 0px;
+	padding-left: 4px;
+	text-align: center;
+	text-transform: capitalize;
+
+}
+.books-text-1parag {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	color: #494949;
+	text-align: justify;
+	vertical-align: top;
+	padding-left: 10px;
+	list-style-position: outside;
+	list-style-type: square;
+}
+.books-poem {
+
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	color: #494949;
+	text-align: center;
+	vertical-align: top;
+	padding-left: 10px;
+	list-style-position: outside;
+	list-style-type: square;
+}
+.books-citata {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	color: #494949;
+	text-align: justify;
+	vertical-align: top;
+	padding-left: 30px;
+	list-style-position: outside;
+	list-style-type: square;
+	padding-right: 30px;
+
+}
+.books-epigraph {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	color: #494949;
+	text-align: justify;
+	vertical-align: top;
+	padding-left: 200px;
+	list-style-position: outside;
+	list-style-type: square;
+}
