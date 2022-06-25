@@ -11,6 +11,12 @@ console.log(date.D);
 
 date.D = Number(date.D);
 
+console.log(date.D);
+
 date.D = date.D - 10;
+
+console.log('-10');
+
+console.log('=');
 
 console.log(date.D);
