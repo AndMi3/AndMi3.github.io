@@ -1,0 +1,193 @@
+body {
+  background-color: #000;
+  font-size: 50px;
+}
+
+div.title {
+  text-align: center;
+}
+
+.title_arial {
+  font-family: arial;
+  color: #ff0000;
+}
+
+.title_helvetica {
+  font-family: helvetica;
+  color: #ff7f00;
+}
+
+.title_sansSerif {
+  font-family: sans-serif;
+  color: #ffff00;
+}
+
+.title_cambria {
+  font-family: cambria;
+  color: #7fff00;
+}
+
+.title_cochin {
+  font-family: cochin;
+  color: #00ff00;
+}
+
+.title_georgia {
+  font-family: georgia;
+  color: #00ff7f;
+}
+
+.title_times {
+  font-family: times;
+  color: #00ffff;
+}
+
+.title_timesNewRoman {
+  font-family: 'Times New Roman';
+  color: #007fff;
+}
+
+.title_serif {
+  font-family: serif;
+  color: #0000ff;
+}
+
+.title_courierNew {
+  font-family: 'Courier New';
+  color: #7f00ff;
+}
+
+.title_courier {
+  font-family: courier;
+  color: #ff00ff;
+}
+
+.title_monospace {
+  font-family: monospace;
+  color: #ff007f;
+}
+
+.title_cursive {
+  font-family: cursive;
+  color: #ff0000;
+}
+
+.title_fantasty {
+  font-family: fantasty;
+  color: #ff7f00;
+}
+
+.title_franklinGoticMedium{
+  font-family: 'Franklin Gotic Medium';
+  color: #ffff00;
+}
+
+.title_arialNarrow{
+  font-family: 'Arial Narrow';
+  color: #7fff00;
+}
+
+.arial {
+  font-family: arial;
+  color: #ffff00;
+}
+
+.arialNarrow {
+  font-family: 'Arial Narrow';
+  color: #ffff00;
+}
+
+.calibri {
+  font-family: calibri;
+  color: #ffff00;
+}
+
+.cambria {
+  font-family: cambria;
+  color: #ffff00;
+}
+
+.cochin {
+  font-family: cochin;
+  color: #ffff00;
+}
+
+.courier {
+  font-family: courier;
+  color: #ffff00;
+}
+
+.courierNew {
+  font-family: 'Courier New';
+  color: #ffff00;
+}
+
+.cursive {
+  font-family: cursive;
+  color: #ffff00;
+}
+
+.fantasty {
+  font-family: fantasty;
+  color: #ffff00;
+}
+
+.franklinGoticMedium {
+  font-family: 'Franklin Gothic Medium';
+  color: #ffff00;
+}
+
+.gillSans {
+  font-family: 'Gill Sans';
+  color: #ffff00;
+}
+
+.gillSansMt {
+  font-family: 'Gill Sans MT';
+  color: #ffff00;
+}
+
+.georgia {
+  font-family: georgia;
+  color: #ffff00;
+}
+
+.helvetica {
+  font-family: helvetica;
+  color: #ffff00;
+}
+
+.impact {
+  font-family: Impact;
+  color: #ffff00;
+}
+
+.monospace {
+  font-family: monospace;
+  color: #ffff00;
+}
+
+.sansSerif {
+  font-family: sans-serif;
+  color: #ffff00;
+}
+
+.serif {
+  font-family: serif;
+  color: #ffff00;
+}
+
+.times {
+  font-family: times;
+  color: #ffff00;
+}
+
+.timesNewRoman {
+  font-family: 'Times New Roman';
+  color: #ffff00;
+}
+
+.trebuchetMS{
+  font-family: 'Trebuchet MS';
+  color: #ffff00;
+}
