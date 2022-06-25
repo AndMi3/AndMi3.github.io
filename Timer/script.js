@@ -23,7 +23,7 @@ function reload(){
 
   res.first = `${((date.realtime - date.fdtto) / 60 / 60 / 24).toFixed(0)}`;
 
-  console.log(`\n\nМы вмефти: ${res.first} д`);
+  first.innerText = `\n\nМы вмефти: ${res.first} д`;
 
 }
 
