@@ -21,7 +21,7 @@ function reload(){
 
   console.log(`реальное время: ${date.realtime}`);
 
-  res.first = `${(date.realtime - date.fdtto) / 60 / 60 / 24}.toFixed(0)`;
+  res.first = `${(date.realtime - date.fdtto) / 60 / 60 / 24.toFixed(0)}`;
 
   console.log(`\n\nМы вмефти: ${res.first} д`);
 
