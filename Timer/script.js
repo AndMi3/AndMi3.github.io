@@ -5,7 +5,7 @@ let date = {
 }
 
 function reload(){
-  date.realtime = document.querySelector('span.time')[0].innerText;
+  date.realtime = document.querySelectorAll('span.time')[0].innerText;
   console.log(date.realtime);                         
 }
 
