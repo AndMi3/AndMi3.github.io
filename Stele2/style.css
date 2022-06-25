@@ -1,0 +1,8 @@
+.header-navbar-main-line:before {
+  background-image: linear-gradient( to right, #7f00ff, #000000) !important;
+  width: 200% !important;
+}
+
+.exchange-top-block {
+  background-color: #7f00ff !important;
+}
