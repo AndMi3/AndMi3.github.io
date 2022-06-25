@@ -27,7 +27,7 @@ function reload(){
 
   console.log(first);
 
-  first = `\n\nМы вмефти: ${res.first} д`;
+  first.innerText = `\n\nМы вмефти: ${res.first} д`;
 
 }
 
