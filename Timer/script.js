@@ -5,9 +5,8 @@ let date = {
 }
 
 function reload(){
-  date.D = document.querySelectorAll('span.time')[0].innerText;      
-  date.M = document.querySelectorAll('span.time')[1].innerText;
-  date.Y = document.querySelectorAll('span.time')[2].innerText;
+  data.realtime = document.querySelector('span.time')[0].innerText;
+  console.log(date.realtime);                         
 }
 
 /*
