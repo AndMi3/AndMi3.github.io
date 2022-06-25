@@ -1,3 +1,5 @@
+let res = {}
+
 let first = document.querySelector('span#first').innerText;
 
 let interval = setInterval(reload, 5000);
@@ -19,9 +21,11 @@ function reload(){
 
   console.log(`реальное время: ${date.realtime}`);
 
-  first = `\n\nМы вмефти: ${(date.realtime - date.fdtto) / 60 / 60 / 24} дня`;
+  res.first = `${(date.realtime - date.fdtto) / 60 / 60 / 24}`;
+  
+  res.first = res.first.toFixed(0);
 
-  console.log(`результат: ${first}`);
+  console.log(`\n\nМы вмефти: ${res.first} д`);
 
 }
 
