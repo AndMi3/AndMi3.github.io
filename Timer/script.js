@@ -21,13 +21,13 @@ function reload(){
 
   console.log(`реальное время: ${date.realtime}`);
 
-  res.first = `${((date.realtime - date.fdtto) / 60 / 60 / 24).toFixed(0)}`;
+  res.day = `${((date.realtime - date.fdtto) / 60 / 60 / 24).toFixed(0)}`;
 
   first = document.querySelector('span#first');
 
   console.log(first);
 
-  first.innerText = `\n\nМы вмефти: ${res.first} д`;
+  first.innerText = `\n\nМы вмефти: ${res.day} д`;
 
 }
 
