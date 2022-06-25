@@ -6,7 +6,7 @@ function reload(){
   date.D = document.querySelectorAll('span.time')[0].innerText;      
   date.M = document.querySelectorAll('span.time')[1].innerText;
   date.Y = document.querySelectorAll('span.time')[2].innerText;
-  if(date.Y != date.Y){
+  if(date.Y > date.Y){
     console.log(date.Y);
   }
 }
