@@ -1,4 +1,6 @@
-let interval = setInterval(reload, 1000);
+let first = document.querySelector('span#first').innerText;
+
+let interval = setInterval(reload, 5000);
 
 let date = {
   'fdtto': `${document.querySelector('span#fdtto').innerText}`
@@ -6,7 +8,23 @@ let date = {
 
 function reload(){
   date.realtime = document.querySelectorAll('span.time')[0].innerText;
-  console.log(date.realtime);                         
+  
+  // console.log(date.realtime);                         
+
+  date.fdtto = Number(date.fdtto);
+
+  console.log(`Отправная точка: ${date.fdtto}`);
+
+  date.realtime = Number(date.realtime);
+
+  console.log(`реальное время: ${date.realtime}`);
+
+  first = Number(first);
+
+  first = date.realtime - date.fdtto;
+
+  console.log(`результат: ${first}`);
+
 }
 
 /*
