@@ -23,7 +23,7 @@ function reload(){
 
   res.first = `${((date.realtime - date.fdtto) / 60 / 60 / 24).toFixed(0)}`;
 
-  first = document.querySelector('span#first').innerText;
+  first = document.querySelector('span#first');
 
   console.log(first);
 
