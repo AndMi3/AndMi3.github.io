@@ -1,0 +1,12 @@
+body{
+    background-color: #292929;
+    color: #e4ecf8;
+    font-family: monospace;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+div.butt{
+  align: right;
+}
