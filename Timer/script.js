@@ -1,4 +1,4 @@
-let interval = setInterval(reload, 100);
+let interval = setInterval(reload, 500);
 
 let date = {}
 
@@ -6,9 +6,7 @@ function reload(){
   date.D = document.querySelectorAll('span.time')[0].innerText;      
   date.M = document.querySelectorAll('span.time')[1].innerText;
   date.Y = document.querySelectorAll('span.time')[2].innerText;
-  if(date.Y != date.Y){
-    console.log(date.Y);
-  }
+  console.log(date.Y);
 }
 
 /*
