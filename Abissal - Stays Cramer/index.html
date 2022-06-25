@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+  html, body, iframe {
+    height: 80%;
+    width: 100%;
+  }
+  button {
+    width: 49%;
+    height: 20%;
+  }
+</style>
+</head>
+<body>
+<iframe width="1000" height="500"></iframe>
+<button id="back">назад</button>
+<button id="next">далее</button>
+  <script>
+    let n = 0,
+    hr1 = 'https://mybook.ru/storage/public/books/15/02/1502be98-3694-3b10-b7e2-272bb515f119/content',                                                
+    hr2 = '.html',
+    btnBk,
+    btnNxt,
+    ifr;
+
+    ifr = document.getElementsByTagName('iframe')[0];
+    ifr.setAttribute('src', hr1 + n + hr2);
+
+    function next(){
+      ifr = document.getElementsByTagName('iframe')[0];
+      ifr.remove();
+      ifr = document.createElement('iframe');
+      n++;
+      ifr.setAttribute('src', hr1 + n + hr2);
+      document.body.append(ifr);
+    }
+
+    function back(){
+      ifr = document.getElementsByTagName('iframe')[0];
+      ifr.remove();
+      ifr = document.createElement('iframe');
+      n--;
+      if(n < 0){ n++; }
+      ifr.setAttribute('src', hr1 + n + hr2);
+      document.body.append(ifr);
+    }
+    btnBk = document.getElementById('back');
+    btnBk.onclick = function(){ back(); }
+
+    btnNxt = document.getElementById('next');
+    btnNxt.onclick = function(){ next(); }
+    
+  </script>
+</body>
+</html>
