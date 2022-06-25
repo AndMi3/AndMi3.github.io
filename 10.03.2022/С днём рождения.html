@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+html, body{
+width:100%;
+height:100%;
+margin-top:-0.13px;
+margin-left:-0.13px;
+}
+
+div.btn_bg{
+height: 100%;
+background-image: url(./Ми.jpg);
+background-color: #00e2ff;
+filter: blur(2px);
+background-size: 170% auto;
+background-position: center;
+background-repeat: no-repeat;
+position: relative;
+z-index: 1;
+}
+
+
+div.btn_txt{
+width: 80%;
+height: 10%;
+margin-top: -200%;
+position: relative;
+z-index: 2;
+top: calc(100% / 2 - (10% / 2));
+left: calc(100% / 2 - (80% / 2));
+text-align: center;
+background-color: #bfbfbf7f;
+border-radius: 50px;
+font-size: 70px;
+color: #00D4BF;
+}
+
+
+div.stxt{
+width: calc(80% - 50px);
+height: calc(90% - 50px);
+margin-top: -200%;
+position: relative;
+z-index: 3;
+top: calc(100% / 2 - (90% / 2));
+left: calc(100% / 2 - (80% / 2));
+background-color: #bfbfbf7f;
+border-radius: 25px;
+padding-top: 50px;
+padding-left: 50px;
+font-size: 40px;
+color: #005460;
+font-weight: 600;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div class="btn_bg"></div>
+
+<div class="btn_txt">Воспроизвести</div>
+
+<!--div class="stxt"></div-->
+
+<!--
+
+С днём рождения симпотулька
+С днём рожденья, бусинка моя
+Пусть невзгды и безнадёга
+Стороною обходят тебя
+
+-->
+
+<script>
+var aud = new Audio();
+aud.src = './С днем рождения симпатюлька.mp3';
+document.body.append(aud);
+
+let btnPly = document.querySelector('div.btn_txt'),
+    sTxt = document.createElement('div');
+
+
+btnPly.onclick = function go(){
+btnPly.remove();
+sTxt.setAttribute('class', 'stxt');
+document.body.append(sTxt);
+aud.play();
+adtxt();
+};
+
+
+let stxt;
+
+function adtxt(){
+stxt = document.querySelector('div.stxt');
+setTimeout(() => stxt.innerHTML = 'С днём', 4700);
+setTimeout(() => stxt.innerHTML += ' ро', 4900);
+setTimeout(() => stxt.innerHTML += 'жде', 5100);
+setTimeout(() => stxt.innerHTML += 'ни', 5300);
+setTimeout(() => stxt.innerHTML += 'я', 5600);
+setTimeout(() => stxt.innerHTML += ' сим', 5900);
+setTimeout(() => stxt.innerHTML += 'по', 6100);
+setTimeout(() => stxt.innerHTML += 'туль', 6300);
+setTimeout(() => stxt.innerHTML += 'ка<br/>', 6500);
+setTimeout(() => stxt.innerHTML += 'С днём', 7000);
+setTimeout(() => stxt.innerHTML += ' ро', 7300);
+setTimeout(() => stxt.innerHTML += 'жде', 7500);
+setTimeout(() => stxt.innerHTML += 'нья,', 7700);
+setTimeout(() => stxt.innerHTML += ' бу', 8100);
+setTimeout(() => stxt.innerHTML += 'син', 8250);
+setTimeout(() => stxt.innerHTML += 'ка', 8400);
+setTimeout(() => stxt.innerHTML += ' мо', 8500);
+setTimeout(() => stxt.innerHTML += 'я<br/>', 8500);
+setTimeout(() => stxt.innerHTML += 'Пусть', 9500);
+setTimeout(() => stxt.innerHTML += ' не', 9700);
+setTimeout(() => stxt.innerHTML += 'ве', 9900);
+setTimeout(() => stxt.innerHTML += 'зу', 10100);
+setTimeout(() => stxt.innerHTML += 'ха', 10200);
+setTimeout(() => stxt.innerHTML += ' и', 10400);
+setTimeout(() => stxt.innerHTML += ' без', 10600);
+setTimeout(() => stxt.innerHTML += 'на', 10800);
+setTimeout(() => stxt.innerHTML += 'дё', 10900);
+setTimeout(() => stxt.innerHTML += 'га<br/>', 11100);
+setTimeout(() => stxt.innerHTML += 'Всег', 11700);
+setTimeout(() => stxt.innerHTML += 'да', 11900);
+setTimeout(() => stxt.innerHTML += ' сто', 12100);
+setTimeout(() => stxt.innerHTML += 'ро', 12200);
+setTimeout(() => stxt.innerHTML += 'но', 12300);
+setTimeout(() => stxt.innerHTML += 'ю', 12350);
+setTimeout(() => stxt.innerHTML += ' об', 12500);
+setTimeout(() => stxt.innerHTML += 'хо', 12700);
+setTimeout(() => stxt.innerHTML += 'дят', 12900);
+setTimeout(() => stxt.innerHTML += ' те', 13100);
+setTimeout(() => stxt.innerHTML += 'бя<br/>', 13300);
+setTimeout(() => stxt.innerHTML += '❤', 13900);
+setTimeout(() => stxt.innerHTML += '❤', 14500);
+setTimeout(() => stxt.innerHTML += '❤', 15100);
+//setTimeout(() => aud.pause(), 9000);
+}
+
+
+</script>
+
+</body>
+</html>
