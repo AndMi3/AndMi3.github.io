@@ -1,4 +1,4 @@
-let res = {}
+let res = {};
 
 let first;
 
@@ -21,13 +21,13 @@ function reload(){
 
   console.log(`реальное время: ${date.realtime}`);
 
-  res.day = `${((date.realtime - date.fdtto) / 60 / 60 / 24).toFixed(0)}`;
+  res.days = `${((date.realtime - date.fdtto) / 60 / 60 / 24).toFixed(0)}`;
 
   first = document.querySelector('span#first');
 
   console.log(first);
 
-  first.innerText = `\n\nМы вмефти: ${res.day} д`;
+  first.innerText = `\n\nМы вмефти: \n${res.years} год/лет\n${res.month}месяц/месяцев\n${res.weeks}неделю/недели\n${res.days} дня/дней\n${res.hours} час/часа\n${res.minutes} минуты/минут\n${res.seconds} секунды/секунд`;
 
 }
 
