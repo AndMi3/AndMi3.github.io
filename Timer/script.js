@@ -17,13 +17,13 @@ function reload(){
   date.realtime = Number(date.realtime);
   console.log(`реальное время: ${date.realtime}`);
 
-  res.years = `${((date.realtime - date.fdtto) / 60 / 60 / 24 / 30 / 12).toFixed(0)}`;
-  res.month = `${((date.realtime - date.fdtto) / 60 / 60 / 24 / 30).toFixed(0)}`;
-  res.weeks = `${((date.realtime - date.fdtto) / 60 / 60 / 24 / 7).toFixed(0)}`;
-  res.days = `${((date.realtime - date.fdtto) / 60 / 60 / 24).toFixed(0)}`;
-  res.hours = `${((date.realtime - date.fdtto) / 60 / 60).toFixed(0)}`;
-  res.minutes = `${((date.realtime - date.fdtto) / 60).toFixed(0)}`;
-  res.seconds = `${(date.realtime - date.fdtto).toFixed(0)}`;
+  res.years = `${Math.trunc((date.realtime - date.fdtto) / 60 / 60 / 24 / 30 / 12)}`;
+  res.month = `${Math.trunk((date.realtime - date.fdtto) / 60 / 60 / 24 / 30)}`;
+  res.weeks = `${Math.trunk((date.realtime - date.fdtto) / 60 / 60 / 24 / 7)}`;
+  res.days = `${Math.trunk((date.realtime - date.fdtto) / 60 / 60 / 24)}`;
+  res.hours = `${Math.trunc((date.realtime - date.fdtto) / 60 / 60)}`;
+  res.minutes = `${Math.trunc((date.realtime - date.fdtto) / 60)}`;
+  res.seconds = `${Math.tunc(date.realtime - date.fdtto)}`;
 
   first = document.querySelector('span#first');
   first.innerText = `\n\nМы вмефти: \n${res.years} год/года/лет\n${res.month} месяц/месяца/месяцев\n${res.weeks} неделю/недели/недель\n${res.days} день/дня/дней\n${res.hours} час/часа/часов\n${res.minutes} минуту/минуты/минут\n${res.seconds} секунду/секунды/секунд`;
