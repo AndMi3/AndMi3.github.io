@@ -23,7 +23,7 @@ function reload(){
   res.days = `${Math.trunc((date.realtime - date.fdtto) / 60 / 60 / 24)}`;
   res.hours = `${Math.trunc((date.realtime - date.fdtto) / 60 / 60)}`;
   res.minutes = `${Math.trunc((date.realtime - date.fdtto) / 60)}`;
-  res.seconds = `${Math.tunc(date.realtime - date.fdtto)}`;
+  res.seconds = `${Math.trunc(date.realtime - date.fdtto)}`;
 
   first = document.querySelector('span#first');
   first.innerText = `\n\nМы вмефти: \n${res.years} год/года/лет\n${res.month} месяц/месяца/месяцев\n${res.weeks} неделю/недели/недель\n${res.days} день/дня/дней\n${res.hours} час/часа/часов\n${res.minutes} минуту/минуты/минут\n${res.seconds} секунду/секунды/секунд`;
