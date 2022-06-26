@@ -18,9 +18,9 @@ function reload(){
   console.log(`реальное время: ${date.realtime}`);
 
   res.years = `${Math.trunc((date.realtime - date.fdtto) / 60 / 60 / 24 / 30 / 12)}`;
-  res.month = `${Math.trunk((date.realtime - date.fdtto) / 60 / 60 / 24 / 30)}`;
-  res.weeks = `${Math.trunk((date.realtime - date.fdtto) / 60 / 60 / 24 / 7)}`;
-  res.days = `${Math.trunk((date.realtime - date.fdtto) / 60 / 60 / 24)}`;
+  res.month = `${Math.trunc((date.realtime - date.fdtto) / 60 / 60 / 24 / 30)}`;
+  res.weeks = `${Math.trunc((date.realtime - date.fdtto) / 60 / 60 / 24 / 7)}`;
+  res.days = `${Math.trunc((date.realtime - date.fdtto) / 60 / 60 / 24)}`;
   res.hours = `${Math.trunc((date.realtime - date.fdtto) / 60 / 60)}`;
   res.minutes = `${Math.trunc((date.realtime - date.fdtto) / 60)}`;
   res.seconds = `${Math.tunc(date.realtime - date.fdtto)}`;
