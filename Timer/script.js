@@ -29,7 +29,7 @@ function reload(){
 
   // а тут самое интнресное  начинаем подсчёт данных, зная "отправную точку" и сегодняшний момент  функция смешная  Math.trunc (маф труньк) аххахахаххах  в общем она избавляет числа от мноооожества имволов после запятой
   res.years = `${((date.realtime - date.fdtto) / 60 / 60 / 24 / 30 / 12)}`;
-  res.month = `${((date.realtime - date.fdtto) / 60 / 60 / 24 / 30)}`;
+  res.month = `${  (res.years - Math.trunc(res.years)) * 12     }`;
   res.weeks = `${((date.realtime - date.fdtto) / 60 / 60 / 24 / 7)}`;
   res.days = `${((date.realtime - date.fdtto) / 60 / 60 / 24)}`;
   res.hours = `${((date.realtime - date.fdtto) / 60 / 60)}`;
