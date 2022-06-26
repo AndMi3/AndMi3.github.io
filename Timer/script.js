@@ -5,7 +5,7 @@ let res = {};
 let first;
 
 // а это интервал для обновления данных
-let interval = setInterval(reload, 1000);
+let interval = setInterval(reload, 10 0);
 
 //создаём переменную для входящих данных времени в секундах
 let date = {
@@ -30,8 +30,8 @@ function reload(){
   // а тут самое интнресное  начинаем подсчёт данных, зная "отправную точку" и сегодняшний момент  функция смешная  Math.trunc (маф труньк) аххахахаххах  в общем она избавляет числа от мноооожества имволов после запятой
   res.years = `${ ((date.realtime - date.fdtto) / 60 / 60 / 24 / 30 / 12) }`;
   res.month = `${ (res.years - Math.trunc(res.years)) * 12 }`;
-  res.weeks = `${ (res.month - Math.trunc(res.month)) * 7 }`;
-  res.days = `${ (res.month - Math.trunc(res.month)) * 30 }`;
+  res.weeks = `${ (res.month - Math.trunc(res.month)) * 4 }`;
+  res.days = `${ (res.weeks - Math.trunc(res.weeks)) * 7 }`;
   res.hours = `${ (res.days - Math.trunc(res.days)) * 24 }`;
   res.minutes = `${ (res.hours - Math.trunc(res.hours)) * 60 }`;
   res.seconds = `${ (res.minutes - Math.trunc(res.minutes)) * 60 }`;
