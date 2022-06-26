@@ -26,7 +26,7 @@ function reload(){
   res.seconds = `${(date.realtime - date.fdtto).toFixed(0)}`;
 
   first = document.querySelector('span#first');
-  first.innerText = `\n\nМы вмефти: \n${res.years} год/лет\n${res.month}месяц/месяцев\n${res.weeks}неделю/недели\n${res.days} дня/дней\n${res.hours} час/часа\n${res.minutes} минуты/минут\n${res.seconds} секунды/секунд`;
+  first.innerText = `\n\nМы вмефти: \n${res.years} год/года/лет\n${res.month} месяц/месяца/месяцев\n${res.weeks} неделю/недели/недель\n${res.days} день/дня/дней\n${res.hours} час/часа/часов\n${res.minutes} минуту/минуты/минут\n${res.seconds} секунду/секунды/секунд`;
 
 }
 
