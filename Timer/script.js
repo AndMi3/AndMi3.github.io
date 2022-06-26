@@ -5,7 +5,7 @@ let res = {};
 let first;
 
 // а это интервал для обновления данных
-let interval = setInterval(reload, 10 0);
+let interval = setInterval(reload, 100);
 
 //создаём переменную для входящих данных времени в секундах
 let date = {
