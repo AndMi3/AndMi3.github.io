@@ -28,7 +28,7 @@ function reload(){
   console.log(`реальное время: ${date.realtime}`);
 
   // а тут самое интнресное  начинаем подсчёт данных, зная "отправную точку" и сегодняшний момент  функция смешная  Math.trunc (маф труньк) аххахахаххах  в общем она избавляет числа от мноооожества имволов после запятой
-  res.years = `${(date.realtime - date.fdtto) / 60 / 60 / 24 / 30 / 12)}`;
+  res.years = `${((date.realtime - date.fdtto) / 60 / 60 / 24 / 30 / 12)}`;
   res.month = `${((date.realtime - date.fdtto) / 60 / 60 / 24 / 30)}`;
   res.weeks = `${((date.realtime - date.fdtto) / 60 / 60 / 24 / 7)}`;
   res.days = `${((date.realtime - date.fdtto) / 60 / 60 / 24)}`;
