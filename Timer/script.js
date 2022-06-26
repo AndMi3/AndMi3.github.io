@@ -32,13 +32,13 @@ function reload(){
   res.month = `${ (res.years - Math.trunc(res.years)) * 12 }`;
   res.weeks = `${ (res.month - Math.trunc(res.month)) * 7 }`;
   res.days = `${ (res.month - Math.trunc(res.month)) * 30 }`;
-  res.hours = `${ (res.days - Math.trunc(res.days)) * 60 }`;
+  res.hours = `${ (res.days - Math.trunc(res.days)) * 24 }`;
   res.minutes = `${ (res.hours - Math.trunc(res.hours)) * 60 }`;
-  res.seconds = `${(date.realtime - date.fdtto)}`;
+  res.seconds = `${ (res.minutes - Math.trunc(res.minutes)) * 60 }`;
 
   // и здесь, собственно, ищем поле вывода данных и выводим на экран значения
   first = document.querySelector('span#first');
-  first.innerText = `\n\nМы вмефти: \n${res.years} год/года/лет\n${res.month} месяц/месяца/месяцев\n${res.weeks} неделю/недели/недель\n${res.days} день/дня/дней\n${res.hours} час/часа/часов\n${res.minutes} минуту/минуты/минут\n${res.seconds} секунду/секунды/секунд`;
+  first.innerText = `\n\nМы вмефти: \n${Math.trunc(res.years)} год/года/лет\n${Math.trunc(res.month)} месяц/месяца/месяцев\n${Math.trunc(res.weeks)} неделю/недели/недель\n${Math.trunc(res.days)} день/дня/дней\n${Math.trunc(res.hours)} час/часа/часов\n${Math.trunc(res.minutes)} минуту/минуты/минут\n${Math.trunc(res.seconds)} секунду/секунды/секунд`;
 
 }
 
