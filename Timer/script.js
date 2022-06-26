@@ -28,13 +28,13 @@ function reload(){
   console.log(`реальное время: ${date.realtime}`);
 
   // а тут самое интнресное  начинаем подсчёт данных, зная "отправную точку" и сегодняшний момент  функция смешная  Math.trunc (маф труньк) аххахахаххах  в общем она избавляет числа от мноооожества имволов после запятой
-  res.years = `${Math.trunc((date.realtime - date.fdtto) / 60 / 60 / 24 / 30 / 12)}`;
-  res.month = `${Math.trunc((date.realtime - date.fdtto) / 60 / 60 / 24 / 30)}`;
-  res.weeks = `${Math.trunc((date.realtime - date.fdtto) / 60 / 60 / 24 / 7)}`;
-  res.days = `${Math.trunc((date.realtime - date.fdtto) / 60 / 60 / 24)}`;
-  res.hours = `${Math.trunc((date.realtime - date.fdtto) / 60 / 60)}`;
-  res.minutes = `${Math.trunc((date.realtime - date.fdtto) / 60)}`;
-  res.seconds = `${Math.trunc(date.realtime - date.fdtto)}`;
+  res.years = `${(date.realtime - date.fdtto) / 60 / 60 / 24 / 30 / 12)}`;
+  res.month = `${((date.realtime - date.fdtto) / 60 / 60 / 24 / 30)}`;
+  res.weeks = `${((date.realtime - date.fdtto) / 60 / 60 / 24 / 7)}`;
+  res.days = `${((date.realtime - date.fdtto) / 60 / 60 / 24)}`;
+  res.hours = `${((date.realtime - date.fdtto) / 60 / 60)}`;
+  res.minutes = `${((date.realtime - date.fdtto) / 60)}`;
+  res.seconds = `${(date.realtime - date.fdtto)}`;
 
   // и здесь, собственно, ищем поле вывода данных и выводим на экран значения
   first = document.querySelector('span#first');
