@@ -9,7 +9,7 @@ let interval = setInterval(reload, 1000);
 
 //создаём переменную для входящих данных времени в секундах
 let date = {
-  'fdtto': `${document.querySelector('span#fdtto').innerText}`;
+  'fdtto': `${document.querySelector('span#fdtto').innerText}`
 }
 
 // добавляем функцию как добавления данных, так и их обновления
