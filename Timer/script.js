@@ -38,7 +38,7 @@ function reload(){
 
   // и здесь, собственно, ищем поле вывода данных и выводим на экран значения
   first = document.querySelector('span#first');
-  first.innerText = `\n\nМы вмефти: \n${Math.trunc(res.years)} год/года/лет\n${Math.trunc(res.month)} месяц/месяца/месяцев\n/*${Math.trunc(res.weeks)} неделю/недели/недель\n*/${Math.trunc(res.days)} день/дня/дней\n${Math.trunc(res.hours)} час/часа/часов\n${Math.trunc(res.minutes)} минуту/минуты/минут\n${Math.trunc(res.seconds)} секунду/секунды/секунд`;
+  first.innerText = `\n\nМы вмефти: \n${Math.trunc(res.years)} год/года/лет\n${Math.trunc(res.month)} месяц/месяца/месяцев\n${Math.trunc(res.weeks)} неделю/недели/недель\n${Math.trunc(res.days)} день/дня/дней\n${Math.trunc(res.hours)} час/часа/часов\n${Math.trunc(res.minutes)} минуту/минуты/минут\n${Math.trunc(res.seconds)} секунду/секунды/секунд`;
 
 }
 
