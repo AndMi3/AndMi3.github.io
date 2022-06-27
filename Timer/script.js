@@ -1,6 +1,8 @@
 // создаём переменную, куда будем заносить результаты вычислений
 let res = {};
 
+let sec;
+
 // создаём переменную для тэга, в который буднм выводить сам результат
 let first;
 
@@ -35,10 +37,12 @@ function reload(){
   res.hours = `${ (res.days - Math.trunc(res.days)) * 24 }`;
   res.minutes = `${ (res.hours - Math.trunc(res.hours)) * 60 }`;
   res.seconds = `${ (res.minutes - Math.trunc(res.minutes)) * 60 }`;
+  
+  sec = res.seconds;
 
   // и здесь, собственно, ищем поле вывода данных и выводим на экран значения
   first = document.querySelector('span#first');
-  first.innerText = `\n\nМы вмефти: \n${Math.trunc(res.years)} год/года/лет\n${Math.trunc(res.month)} месяц/месяца/месяцев\n${Math.trunc(res.weeks)} неделю/недели/недель\n${Math.trunc(res.days)} день/дня/дней\n${Math.trunc(res.hours)} час/часа/часов\n${Math.trunc(res.minutes)} минуту/минуты/минут\n${res.seconds.toFixed(0)} секунду/секунды/секунд`;
+  first.innerText = `\n\nМы вмефти: \n${Math.trunc(res.years)} год/года/лет\n${Math.trunc(res.month)} месяц/месяца/месяцев\n${Math.trunc(res.weeks)} неделю/недели/недель\n${Math.trunc(res.days)} день/дня/дней\n${Math.trunc(res.hours)} час/часа/часов\n${Math.trunc(res.minutes)} минуту/минуты/минут\n${sec.toFixed(0)} секунду/секунды/секунд`;
 
 }
 
